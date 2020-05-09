@@ -22,7 +22,6 @@ class Solution {
                 validity.push(s.charAt(i));
             }
         }
-        if(validity.isEmpty()) return true;
-        else return false;      
+        return validity.isEmpty();      
     }
 }
