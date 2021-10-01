@@ -1,18 +1,12 @@
 class Solution {
     public boolean containsDuplicate(int[] nums) {
-        Set<Integer> duplicatecheck=new HashSet<>();
-        for(int i=0;i<nums.length;i++)
-        {
-            if(!duplicatecheck.contains(nums[i]))
-            {
-                duplicatecheck.add(nums[i]);
-            }
-            else
-            {
+        Map<Integer,Integer> valueStorage = new HashMap<>();
+        for(int traversal =0; traversal<nums.length;traversal++){
+            if(valueStorage.containsKey(nums[traversal])){
                 return true;
             }
+                valueStorage.put(nums[traversal], traversal);
         }
         return false;
-        
     }
 }
