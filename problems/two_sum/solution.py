@@ -6,5 +6,3 @@ class Solution:
                 return [i, hashMap[target - nums[i]]]
             if nums[i] not in hashMap:
                 hashMap[nums[i]] = i
-                
-        
