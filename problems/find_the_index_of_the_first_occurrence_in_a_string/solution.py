@@ -1,6 +1,3 @@
-from ast import pattern
-
-
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
         # i=0
