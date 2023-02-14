@@ -21,8 +21,7 @@
 #        """
 
 class NestedIterator:
-    elements = []
-    current = 0
+    
     def init(self, nl):
         if len(nl) == 0:
             return
@@ -35,6 +34,7 @@ class NestedIterator:
     
     def __init__(self, nestedList: [NestedInteger]):
         self.elements=[]
+        self.current = 0
         if len(nestedList) == 0:
             return
         self.init(nestedList)
